@@ -13,12 +13,12 @@ const app = express()
 const port = process.env.PORT || 3000
 
 //Define paths for Express config
-const publicDirectoryPath = path.join(__dirname, '../public')
-// const viewsPath=path.join(__dirname,'../template')
+const publicDirectoryPath = path.join(__dirname, '../Public')
+const viewsPath=path.join(__dirname,'../Views')
 
 //Setup ejs engine and views locations(views location if required)
 app.set('view engine', 'ejs')
-// app.set('views',viewsPath)
+app.set('views',viewsPath)
 
 //Setup static directory
 app.use(express.static(publicDirectoryPath))
