@@ -1,5 +1,5 @@
 
-console.log('Client side javacript file is loaded!')
+// console.log('Client side javacript file is loaded!')
 
 
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
